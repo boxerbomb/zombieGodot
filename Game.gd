@@ -13,7 +13,7 @@ var data = {
 var enemies = []
 
 func _ready():
-	data["id"] = 99
+	data["id"] = 38
 	ws.connect('connection_closed', self, '_closed')
 	ws.connect('connection_error', self, '_closed')
 	ws.connect('connection_established', self, '_connected')
