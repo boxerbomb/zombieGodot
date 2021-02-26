@@ -8,17 +8,30 @@
 
 config_version=4
 
-_global_script_classes=[  ]
+_global_script_classes=[ {
+"base": "",
+"class": "GitAPI",
+"language": "NativeScript",
+"path": "res://git_api.gdns"
+} ]
 _global_script_class_icons={
-
+"GitAPI": ""
 }
 
 [application]
 
 config/name="websocket"
-run/main_scene="res://Game.tscn"
+run/main_scene="res://menu.tscn"
 config/icon="res://icon.png"
 config/auto_accept_quit=false
+
+[autoload]
+
+global="*res://global.gd"
+
+[gdnative]
+
+singletons=[ "res://git_api.gdnlib" ]
 
 [rendering]
 

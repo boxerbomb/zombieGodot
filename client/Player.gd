@@ -5,7 +5,6 @@ export (int) var id = 0
 
 var velocity = Vector2()
 
-#Comment
 func get_input():
 	velocity = Vector2()
 	if Input.is_action_pressed("ui_right"):
