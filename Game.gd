@@ -1,7 +1,9 @@
 extends Node2D
 
+onready var global_vars = get_node("/root/GlobalVars")
+
 var ws = WebSocketClient.new()
-var URL = "ws://127.0.0.1:9001"
+var URL = "ws://"+global_vars.url+":9001"
 var enemy = preload("res://Enemy.tscn")
 
 var data = {
@@ -13,7 +15,7 @@ var data = {
 var enemies = []
 
 func _ready():
-	data["id"] = 99
+	data["id"] = global_vars.id
 	ws.connect('connection_closed', self, '_closed')
 	ws.connect('connection_error', self, '_closed')
 	ws.connect('connection_established', self, '_connected')
@@ -42,7 +44,6 @@ func _on_data():
 			add_child(e)
 
 func _process(delta):
-	print(delta)
 	data["x"] = $Player.position.x
 	data["y"] = $Player.position.y
 	ws.get_peer(1).put_packet(JSON.print(data).to_utf8())
