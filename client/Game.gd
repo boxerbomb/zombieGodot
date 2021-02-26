@@ -1,11 +1,13 @@
 extends Node2D
 
 var ws = WebSocketClient.new()
-var URL = "ws://127.0.0.1:9001"
+var URL = "ws://"+global.URL+":9001"
 var enemy = preload("res://Enemy.tscn")
 
+
+
 var data = {
-	"x": 0,
+	"x": global.ID,
 	"y": 0,
 	"id": 0
 }
@@ -13,7 +15,7 @@ var data = {
 var enemies = []
 
 func _ready():
-	data["id"] = 2
+	data["id"] = global.ID
 	ws.connect('connection_closed', self, '_closed')
 	ws.connect('connection_error', self, '_closed')
 	ws.connect('connection_established', self, '_connected')
@@ -42,7 +44,6 @@ func _on_data():
 			add_child(e)
 
 func _process(delta):
-	print(delta)
 	data["x"] = $Player.position.x
 	data["y"] = $Player.position.y
 	ws.get_peer(1).put_packet(JSON.print(data).to_utf8())
