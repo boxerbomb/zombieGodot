@@ -21,13 +21,17 @@ _global_script_class_icons={
 [application]
 
 config/name="websocket"
-run/main_scene="res://menu.tscn"
+run/main_scene="res://map.tscn"
 config/icon="res://icon.png"
 config/auto_accept_quit=false
 
 [autoload]
 
 global="*res://global.gd"
+
+[editor_plugins]
+
+enabled=PoolStringArray( "vnen.tiled_importer" )
 
 [gdnative]
 
@@ -36,3 +40,7 @@ singletons=[ "res://git_api.gdnlib" ]
 [rendering]
 
 environment/default_environment="res://default_env.tres"
+
+[tiled_importer]
+
+enable_json_format=true
