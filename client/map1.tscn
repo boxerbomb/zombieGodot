@@ -1,0 +1,49 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://map1.tmx" type="PackedScene" id=1]
+[ext_resource path="res://Player.gd" type="Script" id=2]
+[ext_resource path="res://icon.png" type="Texture" id=3]
+[ext_resource path="res://Inventory/InventoryComponent.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Inventory/Items/Item_Apple.gd" type="Script" id=5]
+[ext_resource path="res://Inventory/Other/ContainerWindow.tscn" type="PackedScene" id=6]
+
+[sub_resource type="CircleShape2D" id=1]
+radius = 33.6772
+
+[node name="map1" index="0" instance=ExtResource( 1 )]
+
+[node name="Player" type="KinematicBody2D" parent="." index="2"]
+position = Vector2( 793.627, 454.775 )
+script = ExtResource( 2 )
+
+[node name="GUI" type="Control" parent="Player" index="0"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -511.845
+margin_top = -297.833
+margin_right = 512.155
+margin_bottom = 302.167
+
+[node name="GameCamera" type="Camera2D" parent="Player" index="1"]
+current = true
+drag_margin_left = 0.0
+drag_margin_top = 0.0
+drag_margin_right = 0.0
+drag_margin_bottom = 0.0
+
+[node name="Sprite" type="Sprite" parent="Player" index="2"]
+texture = ExtResource( 3 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Player" index="3"]
+shape = SubResource( 1 )
+
+[node name="InventoryComponent" parent="Player" index="4" instance=ExtResource( 4 )]
+start_items = [ ExtResource( 5 ) ]
+start_items_amount = [ 1 ]
+
+[node name="Hotbar" parent="Player" index="5" instance=ExtResource( 4 )]
+inv_name = "Hotbar"
+inv_slots = 8
+start_items = [ ExtResource( 5 ) ]
+start_items_amount = [ 1 ]
+window_scene = ExtResource( 6 )

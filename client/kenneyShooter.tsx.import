@@ -1,0 +1,20 @@
+[remap]
+
+importer="vnen.tiled_tileset_importer"
+type="TileSet"
+path="res://.import/kenneyShooter.tsx-c6cea36833beb726293765e6b2bf3db9.res"
+
+[deps]
+
+source_file="res://kenneyShooter.tsx"
+dest_files=[ "res://.import/kenneyShooter.tsx-c6cea36833beb726293765e6b2bf3db9.res" ]
+
+[params]
+
+custom_properties=true
+tile_metadata=true
+image_flags=7
+embed_internal_images=false
+save_tiled_properties=false
+apply_offset=false
+post_import_script=""
