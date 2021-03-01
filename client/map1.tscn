@@ -13,7 +13,6 @@ radius = 33.6772
 script = ExtResource( 2 )
 
 [node name="Player" type="KinematicBody2D" parent="." index="2"]
-editor/display_folded = true
 position = Vector2( 793.627, 454.775 )
 script = ExtResource( 3 )
 
