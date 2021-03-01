@@ -30,6 +30,12 @@ _global_script_class_icons={
 "Inventory_Component": ""
 }
 
+[PluginSettings]
+
+gdinv/ItemJsonPaths=PoolStringArray( "" )
+gdinv/LoadOnReady=true
+gdinv/RecursiveLoad=true
+
 [application]
 
 config/name="websocket"
