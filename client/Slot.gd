@@ -3,7 +3,14 @@ extends Panel
 
 var ItemClass = preload("res://Item.tscn")
 var item = null;
+var isBackpack = false;
+
 func _ready():
+	if get_parent().name == "backpack":
+		isBackpack=true
+	else:
+		isBackpack=false
+		
 	randomize()
 	if randi()%2 == 0:
 		item = ItemClass.instance()

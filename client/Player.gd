@@ -16,6 +16,10 @@ func get_input():
 	if Input.is_action_pressed('ui_up'):
 		velocity.y -= 1
 		
+	if Input.is_action_just_pressed('ui_inventory'):
+		global.InventoryUp = not global.InventoryUp
+		$Inventory/backpack.visible = not $Inventory/backpack.visible 
+		
 		
 	velocity = velocity.normalized() * speed
 

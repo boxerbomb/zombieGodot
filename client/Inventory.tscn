@@ -21,7 +21,7 @@ margin_right = 964.151
 margin_bottom = 574.126
 texture = ExtResource( 2 )
 
-[node name="GridContainer" type="GridContainer" parent="."]
+[node name="hotbar" type="GridContainer" parent="."]
 margin_left = 86.0
 margin_top = 504.0
 margin_right = 957.0
@@ -30,14 +30,14 @@ custom_constants/vseparation = 5
 custom_constants/hseparation = 38
 columns = 9
 
-[node name="Slot1" type="Panel" parent="GridContainer"]
+[node name="Slot1" type="Panel" parent="hotbar"]
 margin_right = 63.0
 margin_bottom = 63.0
 rect_min_size = Vector2( 63, 63 )
 custom_styles/panel = SubResource( 1 )
 script = ExtResource( 4 )
 
-[node name="Slot2" type="Panel" parent="GridContainer"]
+[node name="Slot2" type="Panel" parent="hotbar"]
 margin_left = 101.0
 margin_right = 164.0
 margin_bottom = 63.0
@@ -45,7 +45,7 @@ rect_min_size = Vector2( 63, 63 )
 custom_styles/panel = SubResource( 1 )
 script = ExtResource( 4 )
 
-[node name="Slot3" type="Panel" parent="GridContainer"]
+[node name="Slot3" type="Panel" parent="hotbar"]
 margin_left = 202.0
 margin_right = 265.0
 margin_bottom = 63.0
@@ -53,7 +53,7 @@ rect_min_size = Vector2( 63, 63 )
 custom_styles/panel = SubResource( 1 )
 script = ExtResource( 4 )
 
-[node name="Slot4" type="Panel" parent="GridContainer"]
+[node name="Slot4" type="Panel" parent="hotbar"]
 margin_left = 303.0
 margin_right = 366.0
 margin_bottom = 63.0
@@ -61,7 +61,7 @@ rect_min_size = Vector2( 63, 63 )
 custom_styles/panel = SubResource( 1 )
 script = ExtResource( 4 )
 
-[node name="Slot5" type="Panel" parent="GridContainer"]
+[node name="Slot5" type="Panel" parent="hotbar"]
 margin_left = 404.0
 margin_right = 467.0
 margin_bottom = 63.0
@@ -69,7 +69,7 @@ rect_min_size = Vector2( 63, 63 )
 custom_styles/panel = SubResource( 1 )
 script = ExtResource( 4 )
 
-[node name="Slot6" type="Panel" parent="GridContainer"]
+[node name="Slot6" type="Panel" parent="hotbar"]
 margin_left = 505.0
 margin_right = 568.0
 margin_bottom = 63.0
@@ -77,7 +77,7 @@ rect_min_size = Vector2( 63, 63 )
 custom_styles/panel = SubResource( 1 )
 script = ExtResource( 4 )
 
-[node name="Slot7" type="Panel" parent="GridContainer"]
+[node name="Slot7" type="Panel" parent="hotbar"]
 margin_left = 606.0
 margin_right = 669.0
 margin_bottom = 63.0
@@ -85,7 +85,7 @@ rect_min_size = Vector2( 63, 63 )
 custom_styles/panel = SubResource( 1 )
 script = ExtResource( 4 )
 
-[node name="Slot8" type="Panel" parent="GridContainer"]
+[node name="Slot8" type="Panel" parent="hotbar"]
 margin_left = 707.0
 margin_right = 770.0
 margin_bottom = 63.0
@@ -93,10 +93,192 @@ rect_min_size = Vector2( 63, 63 )
 custom_styles/panel = SubResource( 1 )
 script = ExtResource( 4 )
 
-[node name="Slot9" type="Panel" parent="GridContainer"]
+[node name="Slot9" type="Panel" parent="hotbar"]
 margin_left = 808.0
 margin_right = 871.0
 margin_bottom = 63.0
+rect_min_size = Vector2( 63, 63 )
+custom_styles/panel = SubResource( 1 )
+script = ExtResource( 4 )
+
+[node name="backpack" type="GridContainer" parent="."]
+editor/display_folded = true
+visible = false
+margin_left = 693.407
+margin_top = 91.7386
+margin_right = 1564.41
+margin_bottom = 426.739
+custom_constants/vseparation = 5
+custom_constants/hseparation = 5
+columns = 4
+
+[node name="Slot1" type="Panel" parent="backpack"]
+margin_right = 63.0
+margin_bottom = 63.0
+rect_min_size = Vector2( 63, 63 )
+custom_styles/panel = SubResource( 1 )
+script = ExtResource( 4 )
+
+[node name="Slot2" type="Panel" parent="backpack"]
+margin_left = 68.0
+margin_right = 131.0
+margin_bottom = 63.0
+rect_min_size = Vector2( 63, 63 )
+custom_styles/panel = SubResource( 1 )
+script = ExtResource( 4 )
+
+[node name="Slot3" type="Panel" parent="backpack"]
+margin_left = 136.0
+margin_right = 199.0
+margin_bottom = 63.0
+rect_min_size = Vector2( 63, 63 )
+custom_styles/panel = SubResource( 1 )
+script = ExtResource( 4 )
+
+[node name="Slot4" type="Panel" parent="backpack"]
+margin_left = 204.0
+margin_right = 267.0
+margin_bottom = 63.0
+rect_min_size = Vector2( 63, 63 )
+custom_styles/panel = SubResource( 1 )
+script = ExtResource( 4 )
+
+[node name="Slot5" type="Panel" parent="backpack"]
+margin_top = 68.0
+margin_right = 63.0
+margin_bottom = 131.0
+rect_min_size = Vector2( 63, 63 )
+custom_styles/panel = SubResource( 1 )
+script = ExtResource( 4 )
+
+[node name="Slot6" type="Panel" parent="backpack"]
+margin_left = 68.0
+margin_top = 68.0
+margin_right = 131.0
+margin_bottom = 131.0
+rect_min_size = Vector2( 63, 63 )
+custom_styles/panel = SubResource( 1 )
+script = ExtResource( 4 )
+
+[node name="Slot7" type="Panel" parent="backpack"]
+margin_left = 136.0
+margin_top = 68.0
+margin_right = 199.0
+margin_bottom = 131.0
+rect_min_size = Vector2( 63, 63 )
+custom_styles/panel = SubResource( 1 )
+script = ExtResource( 4 )
+
+[node name="Slot8" type="Panel" parent="backpack"]
+margin_left = 204.0
+margin_top = 68.0
+margin_right = 267.0
+margin_bottom = 131.0
+rect_min_size = Vector2( 63, 63 )
+custom_styles/panel = SubResource( 1 )
+script = ExtResource( 4 )
+
+[node name="Slot9" type="Panel" parent="backpack"]
+margin_top = 136.0
+margin_right = 63.0
+margin_bottom = 199.0
+rect_min_size = Vector2( 63, 63 )
+custom_styles/panel = SubResource( 1 )
+script = ExtResource( 4 )
+
+[node name="Slot10" type="Panel" parent="backpack"]
+margin_left = 68.0
+margin_top = 136.0
+margin_right = 131.0
+margin_bottom = 199.0
+rect_min_size = Vector2( 63, 63 )
+custom_styles/panel = SubResource( 1 )
+script = ExtResource( 4 )
+
+[node name="Slot11" type="Panel" parent="backpack"]
+margin_left = 136.0
+margin_top = 136.0
+margin_right = 199.0
+margin_bottom = 199.0
+rect_min_size = Vector2( 63, 63 )
+custom_styles/panel = SubResource( 1 )
+script = ExtResource( 4 )
+
+[node name="Slot12" type="Panel" parent="backpack"]
+margin_left = 204.0
+margin_top = 136.0
+margin_right = 267.0
+margin_bottom = 199.0
+rect_min_size = Vector2( 63, 63 )
+custom_styles/panel = SubResource( 1 )
+script = ExtResource( 4 )
+
+[node name="Slot13" type="Panel" parent="backpack"]
+margin_top = 204.0
+margin_right = 63.0
+margin_bottom = 267.0
+rect_min_size = Vector2( 63, 63 )
+custom_styles/panel = SubResource( 1 )
+script = ExtResource( 4 )
+
+[node name="Slot14" type="Panel" parent="backpack"]
+margin_left = 68.0
+margin_top = 204.0
+margin_right = 131.0
+margin_bottom = 267.0
+rect_min_size = Vector2( 63, 63 )
+custom_styles/panel = SubResource( 1 )
+script = ExtResource( 4 )
+
+[node name="Slot15" type="Panel" parent="backpack"]
+margin_left = 136.0
+margin_top = 204.0
+margin_right = 199.0
+margin_bottom = 267.0
+rect_min_size = Vector2( 63, 63 )
+custom_styles/panel = SubResource( 1 )
+script = ExtResource( 4 )
+
+[node name="Slot16" type="Panel" parent="backpack"]
+margin_left = 204.0
+margin_top = 204.0
+margin_right = 267.0
+margin_bottom = 267.0
+rect_min_size = Vector2( 63, 63 )
+custom_styles/panel = SubResource( 1 )
+script = ExtResource( 4 )
+
+[node name="Slot17" type="Panel" parent="backpack"]
+margin_top = 272.0
+margin_right = 63.0
+margin_bottom = 335.0
+rect_min_size = Vector2( 63, 63 )
+custom_styles/panel = SubResource( 1 )
+script = ExtResource( 4 )
+
+[node name="Slot18" type="Panel" parent="backpack"]
+margin_left = 68.0
+margin_top = 272.0
+margin_right = 131.0
+margin_bottom = 335.0
+rect_min_size = Vector2( 63, 63 )
+custom_styles/panel = SubResource( 1 )
+script = ExtResource( 4 )
+
+[node name="Slot19" type="Panel" parent="backpack"]
+margin_left = 136.0
+margin_top = 272.0
+margin_right = 199.0
+margin_bottom = 335.0
+rect_min_size = Vector2( 63, 63 )
+custom_styles/panel = SubResource( 1 )
+script = ExtResource( 4 )
+
+[node name="Slot20" type="Panel" parent="backpack"]
+margin_left = 204.0
+margin_top = 272.0
+margin_right = 267.0
+margin_bottom = 335.0
 rect_min_size = Vector2( 63, 63 )
 custom_styles/panel = SubResource( 1 )
 script = ExtResource( 4 )
