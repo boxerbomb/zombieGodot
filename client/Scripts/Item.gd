@@ -13,12 +13,7 @@ func _ready():
 	# Set the image to item image
 	
 	# This line is much cleaner, but does not work on browser, Ideally This should be turned into a dictionary
-	#$TextureRect.texture = load("res://Assets/item_icons/"+item_name+".png")
-	if item_name == "Potion":
-		$TextureRect.texture = load("res://Assets/item_icons/potion.png")
-	elif item_name == "Fist":
-		print("Fist")
-		$TextureRect.texture = load("res://Assets/item_icons/fist.png")
+	$TextureRect.texture = load("res://Assets/item_icons/"+item_name+".png")
 	
 	
 	# Find the maximun stack size and then choose a random value
