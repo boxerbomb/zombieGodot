@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/icon.png-487276ed1e3a0c39cad0279d744ee560.stex"
+path="res://.import/sewer_tileset.png-0aab6e44427af76fc1db39e8d04e27c8.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://icon.png"
-dest_files=[ "res://.import/icon.png-487276ed1e3a0c39cad0279d744ee560.stex" ]
+source_file="res://Assets/Images/sewer_tileset.png"
+dest_files=[ "res://.import/sewer_tileset.png-0aab6e44427af76fc1db39e8d04e27c8.stex" ]
 
 [params]
 

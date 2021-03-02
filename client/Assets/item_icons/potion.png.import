@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/map2d.png-8503c4a87f8e73ef8ceb8e8e31c0cd2c.stex"
+path="res://.import/potion.png-5dbc75c75c905175d676fa0c5a8b60b2.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://map2d.png"
-dest_files=[ "res://.import/map2d.png-8503c4a87f8e73ef8ceb8e8e31c0cd2c.stex" ]
+source_file="res://Assets/item_icons/potion.png"
+dest_files=[ "res://.import/potion.png-5dbc75c75c905175d676fa0c5a8b60b2.stex" ]
 
 [params]
 

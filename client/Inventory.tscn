@@ -1,9 +1,10 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=7 format=2]
 
-[ext_resource path="res://Inventory.gd" type="Script" id=1]
-[ext_resource path="res://inventoryBackground.png" type="Texture" id=2]
+[ext_resource path="res://Scripts/Inventory.gd" type="Script" id=1]
+[ext_resource path="res://Assets/Images/inventoryBackground.png" type="Texture" id=2]
 [ext_resource path="res://inventButton.png" type="Texture" id=3]
-[ext_resource path="res://Slot.gd" type="Script" id=4]
+[ext_resource path="res://Classes/Slot.gd" type="Script" id=4]
+[ext_resource path="res://Assets/ui/select.png" type="Texture" id=5]
 
 [sub_resource type="StyleBoxTexture" id=1]
 texture = ExtResource( 3 )
@@ -37,6 +38,12 @@ rect_min_size = Vector2( 63, 63 )
 custom_styles/panel = SubResource( 1 )
 script = ExtResource( 4 )
 
+[node name="Select" type="Sprite" parent="hotbar/Slot1"]
+position = Vector2( 33.6013, 32.3088 )
+scale = Vector2( 1.2, 1.2 )
+z_index = 2
+texture = ExtResource( 5 )
+
 [node name="Slot2" type="Panel" parent="hotbar"]
 margin_left = 101.0
 margin_right = 164.0
@@ -44,6 +51,13 @@ margin_bottom = 63.0
 rect_min_size = Vector2( 63, 63 )
 custom_styles/panel = SubResource( 1 )
 script = ExtResource( 4 )
+
+[node name="Select" type="Sprite" parent="hotbar/Slot2"]
+visible = false
+position = Vector2( 33.6013, 32.3088 )
+scale = Vector2( 1.2, 1.2 )
+z_index = 2
+texture = ExtResource( 5 )
 
 [node name="Slot3" type="Panel" parent="hotbar"]
 margin_left = 202.0
@@ -53,6 +67,13 @@ rect_min_size = Vector2( 63, 63 )
 custom_styles/panel = SubResource( 1 )
 script = ExtResource( 4 )
 
+[node name="Select" type="Sprite" parent="hotbar/Slot3"]
+visible = false
+position = Vector2( 33.6013, 32.3088 )
+scale = Vector2( 1.2, 1.2 )
+z_index = 2
+texture = ExtResource( 5 )
+
 [node name="Slot4" type="Panel" parent="hotbar"]
 margin_left = 303.0
 margin_right = 366.0
@@ -60,6 +81,13 @@ margin_bottom = 63.0
 rect_min_size = Vector2( 63, 63 )
 custom_styles/panel = SubResource( 1 )
 script = ExtResource( 4 )
+
+[node name="Select" type="Sprite" parent="hotbar/Slot4"]
+visible = false
+position = Vector2( 33.6013, 32.3088 )
+scale = Vector2( 1.2, 1.2 )
+z_index = 2
+texture = ExtResource( 5 )
 
 [node name="Slot5" type="Panel" parent="hotbar"]
 margin_left = 404.0
@@ -69,6 +97,13 @@ rect_min_size = Vector2( 63, 63 )
 custom_styles/panel = SubResource( 1 )
 script = ExtResource( 4 )
 
+[node name="Select" type="Sprite" parent="hotbar/Slot5"]
+visible = false
+position = Vector2( 33.6013, 32.3088 )
+scale = Vector2( 1.2, 1.2 )
+z_index = 2
+texture = ExtResource( 5 )
+
 [node name="Slot6" type="Panel" parent="hotbar"]
 margin_left = 505.0
 margin_right = 568.0
@@ -76,6 +111,13 @@ margin_bottom = 63.0
 rect_min_size = Vector2( 63, 63 )
 custom_styles/panel = SubResource( 1 )
 script = ExtResource( 4 )
+
+[node name="Select" type="Sprite" parent="hotbar/Slot6"]
+visible = false
+position = Vector2( 33.6013, 32.3088 )
+scale = Vector2( 1.2, 1.2 )
+z_index = 2
+texture = ExtResource( 5 )
 
 [node name="Slot7" type="Panel" parent="hotbar"]
 margin_left = 606.0
@@ -85,6 +127,13 @@ rect_min_size = Vector2( 63, 63 )
 custom_styles/panel = SubResource( 1 )
 script = ExtResource( 4 )
 
+[node name="Select" type="Sprite" parent="hotbar/Slot7"]
+visible = false
+position = Vector2( 33.6013, 32.3088 )
+scale = Vector2( 1.2, 1.2 )
+z_index = 2
+texture = ExtResource( 5 )
+
 [node name="Slot8" type="Panel" parent="hotbar"]
 margin_left = 707.0
 margin_right = 770.0
@@ -93,6 +142,13 @@ rect_min_size = Vector2( 63, 63 )
 custom_styles/panel = SubResource( 1 )
 script = ExtResource( 4 )
 
+[node name="Select" type="Sprite" parent="hotbar/Slot8"]
+visible = false
+position = Vector2( 33.6013, 32.3088 )
+scale = Vector2( 1.2, 1.2 )
+z_index = 2
+texture = ExtResource( 5 )
+
 [node name="Slot9" type="Panel" parent="hotbar"]
 margin_left = 808.0
 margin_right = 871.0
@@ -100,6 +156,13 @@ margin_bottom = 63.0
 rect_min_size = Vector2( 63, 63 )
 custom_styles/panel = SubResource( 1 )
 script = ExtResource( 4 )
+
+[node name="Select" type="Sprite" parent="hotbar/Slot9"]
+visible = false
+position = Vector2( 33.6013, 32.3088 )
+scale = Vector2( 1.2, 1.2 )
+z_index = 2
+texture = ExtResource( 5 )
 
 [node name="backpack" type="GridContainer" parent="."]
 editor/display_folded = true

@@ -40,12 +40,13 @@ gdinv/RecursiveLoad=true
 
 config/name="websocket"
 run/main_scene="res://map1.tscn"
-config/icon="res://icon.png"
+config/icon="res://Assets/ui/icon.png"
 config/auto_accept_quit=false
 
 [autoload]
 
-global="*res://global.gd"
+global="*res://Scripts/global.gd"
+JSON_data="*res://Scripts/JSON_data.gd"
 
 [editor_plugins]
 

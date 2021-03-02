@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/inventoryBackground.png-4080bdf3b6132f17c889c935aaafbff5.stex"
+path="res://.import/map2d.png-7c21907a52c14eb3b30d074ce1aecf9f.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://inventoryBackground.png"
-dest_files=[ "res://.import/inventoryBackground.png-4080bdf3b6132f17c889c935aaafbff5.stex" ]
+source_file="res://Assets/Images/map2d.png"
+dest_files=[ "res://.import/map2d.png-7c21907a52c14eb3b30d074ce1aecf9f.stex" ]
 
 [params]
 

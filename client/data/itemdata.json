@@ -1,0 +1,13 @@
+{
+  "Fist": {
+    "ItemCategory": "Tool",
+    "StackSize": 1,
+    "Description": "Your punching fist"
+  },
+  "Potion": {
+    "ItemCategory": "Consumable",
+    "AddHealth": 5,
+    "StackSize": 99,
+    "Description": "It smells like medicine."
+  }
+}

@@ -2,12 +2,12 @@
 
 importer="vnen.tiled_tileset_importer"
 type="TileSet"
-path="res://.import/kenneyShooter.tsx-c6cea36833beb726293765e6b2bf3db9.res"
+path="res://.import/kenneyShooter.tsx-67a04138406eedc6e5e1f71f39d57f78.res"
 
 [deps]
 
-source_file="res://kenneyShooter.tsx"
-dest_files=[ "res://.import/kenneyShooter.tsx-c6cea36833beb726293765e6b2bf3db9.res" ]
+source_file="res://MapData/kenneyShooter.tsx"
+dest_files=[ "res://.import/kenneyShooter.tsx-67a04138406eedc6e5e1f71f39d57f78.res" ]
 
 [params]
 

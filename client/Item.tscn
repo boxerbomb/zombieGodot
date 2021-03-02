@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=3 format=2]
 
-[ext_resource path="res://Item.gd" type="Script" id=1]
+[ext_resource path="res://Scripts/Item.gd" type="Script" id=1]
+[ext_resource path="res://Assets/item_icons/potion.png" type="Texture" id=2]
 
 [node name="Item" type="Node2D"]
 z_index = 1
@@ -10,3 +11,13 @@ script = ExtResource( 1 )
 margin_right = 40.0
 margin_bottom = 40.0
 mouse_filter = 2
+texture = ExtResource( 2 )
+
+[node name="Label" type="Label" parent="."]
+margin_left = 39.0036
+margin_top = 44.7115
+margin_right = 79.0036
+margin_bottom = 58.7115
+rect_scale = Vector2( 1.5, 1.5 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "99"
