@@ -13,4 +13,4 @@ func LoadData(file_path):
 	return json_data.result
 
 func _ready():
-	item_data = LoadData("res://data/itemdata.json")
+	item_data = LoadData("res://itemdata.json1")
